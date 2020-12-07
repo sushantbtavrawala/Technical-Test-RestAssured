@@ -1,0 +1,202 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-12-07T08:12:25.020Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2000900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.OperationSteps.before(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "1- Validate that 3 fixtures are returned within response",
+        "description": "",
+        "id": "verify-different-fixtures-using-rest-assured;1--validate-that-3-fixtures-are-returned-within-response",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "output": [
+              "Response Body is: [\n    {\n        \"fixtureId\": \"1\",\n        \"fixtureStatus\": {\n            \"displayed\": false,\n            \"suspended\": true\n        },\n        \"footballFullState\": {\n            \"homeTeam\": \"Dagenham \u0026 Redbridge\",\n            \"awayTeam\": \"Österreich\",\n            \"finished\": false,\n            \"gameTimeInSeconds\": 2656,\n            \"goals\": [\n                {\n                    \"clockTime\": 640,\n                    \"confirmed\": true,\n                    \"id\": 678606,\n                    \"ownGoal\": false,\n                    \"penalty\": false,\n                    \"period\": \"FIRST_HALF\",\n                    \"playerId\": 560617,\n                    \"teamId\": \"1\"\n                },\n                {\n                    \"clockTime\": 864,\n                    \"confirmed\": true,\n                    \"id\": 164002,\n                    \"ownGoal\": false,\n                    \"penalty\": false,\n                    \"period\": \"FIRST_HALF\",\n                    \"playerId\": 60817,\n                    \"teamId\": \"2\"\n                },\n                {\n                    \"clockTime\": 1312,\n                    \"confirmed\": true,\n                    \"id\": 267245,\n                    \"ownGoal\": false,\n                    \"penalty\": false,\n                    \"period\": \"FIRST_HALF\",\n                    \"playerId\": 136629,\n                    \"teamId\": \"1\"\n                },\n                {\n                    \"clockTime\": 1760,\n                    \"confirmed\": true,\n                    \"id\": 758030,\n                    \"ownGoal\": false,\n                    \"penalty\": false,\n                    \"period\": \"FIRST_HALF\",\n                    \"playerId\": 131840,\n                    \"teamId\": \"2\"\n                }\n            ],\n            \"period\": \"SECOND_HALF\",\n            \"possibles\": [\n                \n            ],\n            \"corners\": [\n                \n            ],\n            \"redCards\": [\n                \n            ],\n            \"yellowCards\": [\n                \n            ],\n            \"startDateTime\": \"2018-03-20T10:49:38.655Z\",\n            \"started\": true,\n            \"teams\": [\n                {\n                    \"association\": \"HOME\",\n                    \"name\": \"Dagenham-\u0026-Redbridge\",\n                    \"teamId\": \"HOME\"\n                },\n                {\n                    \"association\": \"AWAY\",\n                    \"name\": \"Österreich\",\n                    \"teamId\": \"AWAY\"\n                }\n            ]\n        }\n    },\n    {\n        \"fixtureId\": \"2\",\n        \"fixtureStatus\": {\n            \"displayed\": true,\n            \"suspended\": false\n        },\n        \"footballFullState\": {\n            \"homeTeam\": \"Manchester United\",\n            \"awayTeam\": \"Leeds United\",\n            \"finished\": false,\n            \"gameTimeInSeconds\": 900,\n            \"goals\": [\n                {\n                    \"clockTime\": 640,\n                    \"confirmed\": true,\n                    \"id\": 678606,\n                    \"ownGoal\": false,\n                    \"penalty\": false,\n                    \"period\": \"FIRST_HALF\",\n                    \"playerId\": 560617,\n                    \"teamId\": \"1\"\n                },\n                {\n                    \"clockTime\": 864,\n                    \"confirmed\": true,\n                    \"id\": 164002,\n                    \"ownGoal\": false,\n                    \"penalty\": false,\n                    \"period\": \"FIRST_HALF\",\n                    \"playerId\": 60817,\n                    \"teamId\": \"2\"\n                }\n            ],\n            \"period\": \"FIRST_HALF\",\n            \"possibles\": [\n                \n            ],\n            \"corners\": [\n                \n            ],\n            \"redCards\": [\n                \n            ],\n            \"yellowCards\": [\n                \n            ],\n            \"startDateTime\": \"2018-03-20T10:49:38.655Z\",\n            \"started\": true,\n            \"teams\": [\n                {\n                    \"association\": \"HOME\",\n                    \"name\": \"Manchester-United\",\n                    \"teamId\": \"HOME\"\n                },\n                {\n                    \"association\": \"AWAY\",\n                    \"name\": \"Leeds-United\",\n                    \"teamId\": \"AWAY\"\n                }\n            ]\n        }\n    },\n    {\n        \"fixtureId\": \"3\",\n        \"fixtureStatus\": {\n            \"displayed\": false,\n            \"suspended\": true\n        },\n        \"footballFullState\": {\n            \"homeTeam\": \"Garforth FC\",\n            \"awayTeam\": \"York FC\",\n            \"finished\": false,\n            \"gameTimeInSeconds\": 950,\n            \"goals\": [\n                {\n                    \"clockTime\": 640,\n                    \"confirmed\": true,\n                    \"id\": 678606,\n                    \"ownGoal\": false,\n                    \"penalty\": false,\n                    \"period\": \"FIRST_HALF\",\n                    \"playerId\": 560617,\n                    \"teamId\": \"1\"\n                }\n            ],\n            \"period\": \"FIRST_HALF\",\n            \"possibles\": [\n                \n            ],\n            \"corners\": [\n                \n            ],\n            \"redCards\": [\n                \n            ],\n            \"yellowCards\": [\n                \n            ],\n            \"startDateTime\": \"2018-03-20T10:49:38.655Z\",\n            \"started\": true,\n            \"teams\": [\n                {\n                    \"association\": \"HOME\",\n                    \"name\": \"Garforth-FC\",\n                    \"teamId\": \"HOME\"\n                },\n                {\n                    \"association\": \"AWAY\",\n                    \"name\": \"York-FC\",\n                    \"teamId\": \"AWAY\"\n                }\n            ]\n        }\n    },\n    {\n        \"fixtureId\": 4,\n        \"fixtureStatus\": {\n            \"displayed\": false,\n            \"suspended\": true\n        },\n        \"footballFullState\": {\n            \"homeTeam\": \"TopMan-123\",\n            \"awayTeam\": \"EldoneSquare-234\",\n            \"finished\": false,\n            \"gameTimeInSeconds\": 1256,\n            \"goals\": [\n                {\n                    \"clockTime\": 640,\n                    \"confirmed\": true,\n                    \"id\": 999,\n                    \"ownGoal\": false,\n                    \"penalty\": false,\n                    \"period\": \"FIRST_HALF\",\n                    \"playerId\": 50000,\n                    \"teamId\": \"1\"\n                }\n            ],\n            \"period\": \"SECOND_HALF\",\n            \"possibles\": [\n                \n            ],\n            \"corners\": [\n                \n            ],\n            \"redCards\": [\n                \n            ],\n            \"yellowCards\": [\n                \n            ],\n            \"startDateTime\": \"2018-03-20T10:49:38.655Z\",\n            \"started\": true,\n            \"teams\": [\n                {\n                    \"association\": \"HOME\",\n                    \"name\": \"TopMan-123\",\n                    \"teamId\": \"HOME\"\n                },\n                {\n                    \"association\": \"AWAY\",\n                    \"name\": \"EldoneSquare-456\",\n                    \"teamId\": \"AWAY\"\n                }\n            ]\n        }\n    },\n    {\n        \"fixtureId\": 4,\n        \"fixtureStatus\": {\n            \"displayed\": false,\n            \"suspended\": true\n        },\n        \"footballFullState\": {\n            \"homeTeam\": \"TopMan-123\",\n            \"awayTeam\": \"EldoneSquare-234\",\n            \"finished\": false,\n            \"gameTimeInSeconds\": 1256,\n            \"goals\": [\n                {\n                    \"clockTime\": 640,\n                    \"confirmed\": true,\n                    \"id\": 999,\n                    \"ownGoal\": false,\n                    \"penalty\": false,\n                    \"period\": \"FIRST_HALF\",\n                    \"playerId\": 50000,\n                    \"teamId\": \"1\"\n                }\n            ],\n            \"period\": \"SECOND_HALF\",\n            \"possibles\": [\n                \n            ],\n            \"corners\": [\n                \n            ],\n            \"redCards\": [\n                \n            ],\n            \"yellowCards\": [\n                \n            ],\n            \"startDateTime\": \"2018-03-20T10:49:38.655Z\",\n            \"started\": true,\n            \"teams\": [\n                {\n                    \"association\": \"HOME\",\n                    \"name\": \"TopMan-123\",\n                    \"teamId\": \"HOME\"\n                },\n                {\n                    \"association\": \"AWAY\",\n                    \"name\": \"EldoneSquare-456\",\n                    \"teamId\": \"AWAY\"\n                }\n            ]\n        }\n    }\n]"
+            ],
+            "result": {
+              "duration": 1809003300,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I perform GET operation \"fixtures\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"fixtures\"",
+                  "offset": 24
+                }
+              ],
+              "location": "steps.OperationSteps.iPerformGETOperation(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "output": [
+              "Response Body list Key :fixtureId",
+              "Response Body list Value :1",
+              "Response Body list Key :fixtureId",
+              "Response Body list Value :2",
+              "Response Body list Key :fixtureId",
+              "Response Body list Value :3"
+            ],
+            "result": {
+              "error_message": "java.lang.ClassCastException: class java.lang.Integer cannot be cast to class java.lang.String (java.lang.Integer and java.lang.String are in module java.base of loader \u0027bootstrap\u0027)\r\n\tat steps.OperationSteps.iShouldSeeTheAndFixtureId_countWithTheReturnObject(OperationSteps.java:59)\r\n\tat ✽.I should see the \"fixtureId\" and fixtureId_count \"5\" with the return object(classpath:features/01.Operation.feature:5)\r\n",
+              "duration": 596004900,
+              "status": "failed"
+            },
+            "line": 5,
+            "name": "I should see the \"fixtureId\" and fixtureId_count \"5\" with the return object",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"fixtureId\"",
+                  "offset": 17
+                },
+                {
+                  "val": "\"5\"",
+                  "offset": 49
+                }
+              ],
+              "location": "steps.OperationSteps.iShouldSeeTheAndFixtureId_countWithTheReturnObject(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "I validate fixture Id is not null",
+            "match": {
+              "location": "steps.OperationSteps.iValidateFixtureIdIsNotNull()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-12-07T08:12:27.522Z",
+        "before": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.OperationSteps.before(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 8,
+        "name": "2- Validate that new fixture is created with POST response",
+        "description": "",
+        "id": "verify-different-fixtures-using-rest-assured;2--validate-that-new-fixture-is-created-with-post-response",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2222035800,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I perform POST operation with test data file \"src/test/resources/TestData/data.json\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"src/test/resources/TestData/data.json\"",
+                  "offset": 45
+                }
+              ],
+              "location": "steps.OperationSteps.iPerformPOSTOperationWithTestDataFile(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "output": [
+              "Response Body is: [\n    {\n        \"fixtureId\": \"1\",\n        \"fixtureStatus\": {\n            \"displayed\": false,\n            \"suspended\": true\n        },\n        \"footballFullState\": {\n            \"homeTeam\": \"Dagenham \u0026 Redbridge\",\n            \"awayTeam\": \"Österreich\",\n            \"finished\": false,\n            \"gameTimeInSeconds\": 2656,\n            \"goals\": [\n                {\n                    \"clockTime\": 640,\n                    \"confirmed\": true,\n                    \"id\": 678606,\n                    \"ownGoal\": false,\n                    \"penalty\": false,\n                    \"period\": \"FIRST_HALF\",\n                    \"playerId\": 560617,\n                    \"teamId\": \"1\"\n                },\n                {\n                    \"clockTime\": 864,\n                    \"confirmed\": true,\n                    \"id\": 164002,\n                    \"ownGoal\": false,\n                    \"penalty\": false,\n                    \"period\": \"FIRST_HALF\",\n                    \"playerId\": 60817,\n                    \"teamId\": \"2\"\n                },\n                {\n                    \"clockTime\": 1312,\n                    \"confirmed\": true,\n                    \"id\": 267245,\n                    \"ownGoal\": false,\n                    \"penalty\": false,\n                    \"period\": \"FIRST_HALF\",\n                    \"playerId\": 136629,\n                    \"teamId\": \"1\"\n                },\n                {\n                    \"clockTime\": 1760,\n                    \"confirmed\": true,\n                    \"id\": 758030,\n                    \"ownGoal\": false,\n                    \"penalty\": false,\n                    \"period\": \"FIRST_HALF\",\n                    \"playerId\": 131840,\n                    \"teamId\": \"2\"\n                }\n            ],\n            \"period\": \"SECOND_HALF\",\n            \"possibles\": [\n                \n            ],\n            \"corners\": [\n                \n            ],\n            \"redCards\": [\n                \n            ],\n            \"yellowCards\": [\n                \n            ],\n            \"startDateTime\": \"2018-03-20T10:49:38.655Z\",\n            \"started\": true,\n            \"teams\": [\n                {\n                    \"association\": \"HOME\",\n                    \"name\": \"Dagenham-\u0026-Redbridge\",\n                    \"teamId\": \"HOME\"\n                },\n                {\n                    \"association\": \"AWAY\",\n                    \"name\": \"Österreich\",\n                    \"teamId\": \"AWAY\"\n                }\n            ]\n        }\n    },\n    {\n        \"fixtureId\": \"2\",\n        \"fixtureStatus\": {\n            \"displayed\": true,\n            \"suspended\": false\n        },\n        \"footballFullState\": {\n            \"homeTeam\": \"Manchester United\",\n            \"awayTeam\": \"Leeds United\",\n            \"finished\": false,\n            \"gameTimeInSeconds\": 900,\n            \"goals\": [\n                {\n                    \"clockTime\": 640,\n                    \"confirmed\": true,\n                    \"id\": 678606,\n                    \"ownGoal\": false,\n                    \"penalty\": false,\n                    \"period\": \"FIRST_HALF\",\n                    \"playerId\": 560617,\n                    \"teamId\": \"1\"\n                },\n                {\n                    \"clockTime\": 864,\n                    \"confirmed\": true,\n                    \"id\": 164002,\n                    \"ownGoal\": false,\n                    \"penalty\": false,\n                    \"period\": \"FIRST_HALF\",\n                    \"playerId\": 60817,\n                    \"teamId\": \"2\"\n                }\n            ],\n            \"period\": \"FIRST_HALF\",\n            \"possibles\": [\n                \n            ],\n            \"corners\": [\n                \n            ],\n            \"redCards\": [\n                \n            ],\n            \"yellowCards\": [\n                \n            ],\n            \"startDateTime\": \"2018-03-20T10:49:38.655Z\",\n            \"started\": true,\n            \"teams\": [\n                {\n                    \"association\": \"HOME\",\n                    \"name\": \"Manchester-United\",\n                    \"teamId\": \"HOME\"\n                },\n                {\n                    \"association\": \"AWAY\",\n                    \"name\": \"Leeds-United\",\n                    \"teamId\": \"AWAY\"\n                }\n            ]\n        }\n    },\n    {\n        \"fixtureId\": \"3\",\n        \"fixtureStatus\": {\n            \"displayed\": false,\n            \"suspended\": true\n        },\n        \"footballFullState\": {\n            \"homeTeam\": \"Garforth FC\",\n            \"awayTeam\": \"York FC\",\n            \"finished\": false,\n            \"gameTimeInSeconds\": 950,\n            \"goals\": [\n                {\n                    \"clockTime\": 640,\n                    \"confirmed\": true,\n                    \"id\": 678606,\n                    \"ownGoal\": false,\n                    \"penalty\": false,\n                    \"period\": \"FIRST_HALF\",\n                    \"playerId\": 560617,\n                    \"teamId\": \"1\"\n                }\n            ],\n            \"period\": \"FIRST_HALF\",\n            \"possibles\": [\n                \n            ],\n            \"corners\": [\n                \n            ],\n            \"redCards\": [\n                \n            ],\n            \"yellowCards\": [\n                \n            ],\n            \"startDateTime\": \"2018-03-20T10:49:38.655Z\",\n            \"started\": true,\n            \"teams\": [\n                {\n                    \"association\": \"HOME\",\n                    \"name\": \"Garforth-FC\",\n                    \"teamId\": \"HOME\"\n                },\n                {\n                    \"association\": \"AWAY\",\n                    \"name\": \"York-FC\",\n                    \"teamId\": \"AWAY\"\n                }\n            ]\n        }\n    },\n    {\n        \"fixtureId\": 4,\n        \"fixtureStatus\": {\n            \"displayed\": false,\n            \"suspended\": true\n        },\n        \"footballFullState\": {\n            \"homeTeam\": \"TopMan-123\",\n            \"awayTeam\": \"EldoneSquare-234\",\n            \"finished\": false,\n            \"gameTimeInSeconds\": 1256,\n            \"goals\": [\n                {\n                    \"clockTime\": 640,\n                    \"confirmed\": true,\n                    \"id\": 999,\n                    \"ownGoal\": false,\n                    \"penalty\": false,\n                    \"period\": \"FIRST_HALF\",\n                    \"playerId\": 50000,\n                    \"teamId\": \"1\"\n                }\n            ],\n            \"period\": \"SECOND_HALF\",\n            \"possibles\": [\n                \n            ],\n            \"corners\": [\n                \n            ],\n            \"redCards\": [\n                \n            ],\n            \"yellowCards\": [\n                \n            ],\n            \"startDateTime\": \"2018-03-20T10:49:38.655Z\",\n            \"started\": true,\n            \"teams\": [\n                {\n                    \"association\": \"HOME\",\n                    \"name\": \"TopMan-123\",\n                    \"teamId\": \"HOME\"\n                },\n                {\n                    \"association\": \"AWAY\",\n                    \"name\": \"EldoneSquare-456\",\n                    \"teamId\": \"AWAY\"\n                }\n            ]\n        }\n    },\n    {\n        \"fixtureId\": 4,\n        \"fixtureStatus\": {\n            \"displayed\": false,\n            \"suspended\": true\n        },\n        \"footballFullState\": {\n            \"homeTeam\": \"TopMan-123\",\n            \"awayTeam\": \"EldoneSquare-234\",\n            \"finished\": false,\n            \"gameTimeInSeconds\": 1256,\n            \"goals\": [\n                {\n                    \"clockTime\": 640,\n                    \"confirmed\": true,\n                    \"id\": 999,\n                    \"ownGoal\": false,\n                    \"penalty\": false,\n                    \"period\": \"FIRST_HALF\",\n                    \"playerId\": 50000,\n                    \"teamId\": \"1\"\n                }\n            ],\n            \"period\": \"SECOND_HALF\",\n            \"possibles\": [\n                \n            ],\n            \"corners\": [\n                \n            ],\n            \"redCards\": [\n                \n            ],\n            \"yellowCards\": [\n                \n            ],\n            \"startDateTime\": \"2018-03-20T10:49:38.655Z\",\n            \"started\": true,\n            \"teams\": [\n                {\n                    \"association\": \"HOME\",\n                    \"name\": \"TopMan-123\",\n                    \"teamId\": \"HOME\"\n                },\n                {\n                    \"association\": \"AWAY\",\n                    \"name\": \"EldoneSquare-456\",\n                    \"teamId\": \"AWAY\"\n                }\n            ]\n        }\n    },\n    {\n        \"fixtureId\": 4,\n        \"fixtureStatus\": {\n            \"displayed\": false,\n            \"suspended\": true\n        },\n        \"footballFullState\": {\n            \"homeTeam\": \"TopMan-123\",\n            \"awayTeam\": \"EldoneSquare-234\",\n            \"finished\": false,\n            \"gameTimeInSeconds\": 1256,\n            \"goals\": [\n                {\n                    \"clockTime\": 640,\n                    \"confirmed\": true,\n                    \"id\": 999,\n                    \"ownGoal\": false,\n                    \"penalty\": false,\n                    \"period\": \"FIRST_HALF\",\n                    \"playerId\": 50000,\n                    \"teamId\": \"1\"\n                }\n            ],\n            \"period\": \"SECOND_HALF\",\n            \"possibles\": [\n                \n            ],\n            \"corners\": [\n                \n            ],\n            \"redCards\": [\n                \n            ],\n            \"yellowCards\": [\n                \n            ],\n            \"startDateTime\": \"2018-03-20T10:49:38.655Z\",\n            \"started\": true,\n            \"teams\": [\n                {\n                    \"association\": \"HOME\",\n                    \"name\": \"TopMan-123\",\n                    \"teamId\": \"HOME\"\n                },\n                {\n                    \"association\": \"AWAY\",\n                    \"name\": \"EldoneSquare-456\",\n                    \"teamId\": \"AWAY\"\n                }\n            ]\n        }\n    }\n]"
+            ],
+            "result": {
+              "duration": 70002400,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I should see newly fixture ID \"4\" within the return object",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"4\"",
+                  "offset": 30
+                }
+              ],
+              "location": "steps.OperationSteps.iShouldSeeNewlyFixtureIDWithinTheReturnObject(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-12-07T08:12:29.822Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1000600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "steps.OperationSteps.before(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 12,
+        "name": "3- Validate that new fixture is created with GET response",
+        "description": "",
+        "id": "verify-different-fixtures-using-rest-assured;3--validate-that-new-fixture-is-created-with-get-response",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "output": [
+              "null"
+            ],
+            "result": {
+              "error_message": "java.lang.NullPointerException\r\n\tat steps.OperationSteps.iShouldSeeTeamsArrayObjectHasATeamIdOfHOME(OperationSteps.java:101)\r\n\tat ✽.I should see teams array object has a teamId of \u0027HOME\u0027(classpath:features/01.Operation.feature:13)\r\n",
+              "duration": 116998600,
+              "status": "failed"
+            },
+            "line": 13,
+            "name": "I should see teams array object has a teamId of \u0027HOME\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027HOME\u0027",
+                  "offset": 48
+                }
+              ],
+              "location": "steps.OperationSteps.iShouldSeeTeamsArrayObjectHasATeamIdOfHOME(java.lang.String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      }
+    ],
+    "name": "Verify different fixtures using Rest-Assured",
+    "description": "",
+    "id": "verify-different-fixtures-using-rest-assured",
+    "keyword": "Feature",
+    "uri": "classpath:features/01.Operation.feature",
+    "tags": []
+  }
+]

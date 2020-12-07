@@ -1,0 +1,44 @@
+{
+  "fixtureId": 4,
+  "fixtureStatus": {
+    "displayed": false,
+    "suspended": true
+  },
+  "footballFullState": {
+    "homeTeam": "TopMan-123",
+    "awayTeam": "EldoneSquare-234",
+    "finished": false,
+    "gameTimeInSeconds": 1256,
+    "goals": [
+      {
+        "clockTime": 640,
+        "confirmed": true,
+        "id": 999,
+        "ownGoal": false,
+        "penalty": false,
+        "period": "FIRST_HALF",
+        "playerId": 50000,
+        "teamId": "1"
+      }
+    ],
+    "period": "SECOND_HALF",
+    "possibles": [],
+    "corners": [],
+    "redCards": [],
+    "yellowCards": [],
+    "startDateTime": "2018-03-20T10:49:38.655Z",
+    "started": true,
+    "teams": [
+      {
+        "association": "HOME",
+        "name": "TopMan-123",
+        "teamId": "HOME"
+      },
+      {
+        "association": "AWAY",
+        "name": "EldoneSquare-456",
+        "teamId": "AWAY"
+      }
+    ]
+  }
+}

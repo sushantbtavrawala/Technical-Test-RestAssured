@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Cucumber-JVM Html Reports - Feature: Verify different fixtures using Rest-Assured </title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<script type="text/javascript" src="jquery.min.js"></script>
+<script type="text/javascript" src="jquery.tablesorter.min.js"></script>
+<script type="text/javascript" src="bootstrap.min.js"></script>
+
+<script type="text/javascript" src="highcharts.js"></script>
+<script type="text/javascript" src="highcharts-3d.js"></script>
+
+<link rel="stylesheet" href="bootstrap.min.css" type="text/css"/>
+
+<link rel="stylesheet" href="reporting.css" type="text/css"/>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    $("#tablesorter").tablesorter();
+});
+</script>
+
+
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber-jvm Report</p>
+      <ul class="nav navbar-nav navbar-right">
+                <li role="presentation" ><a href="feature-overview.html">Features</a></li>
+        <li role="presentation" ><a href="tag-overview.html">Tags</a></li>
+        <li role="presentation" ><a href="step-overview.html">Steps</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container-fluid" id="summary">
+  <div class="row">
+    <div class="col-md-6">
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>Project</th>
+                          <th>Number</th>
+                        <th>Date</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="info">
+            <td>Technical-Test-RestAssured</td>
+                          <td>1</td>
+                        <td>07 Dec 2020, 08:12</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid" id="title">
+  <h2>Feature Report</h2>
+  </div>
+
+
+<div class="container-fluid" id="report-summary">
+  <table class="stats-table">
+    <thead>
+  <tr class="header">
+        <th></th>
+    <th id="stats-header-scenarios" colspan="3">Scenarios</th>
+    <th id="stats-header-steps" colspan="7">Steps</th>
+    <th></th>
+    <th></th>
+  </tr>
+  <tr>
+    <th id="stats-header-key">Feature</th>
+        <th id="stats-header-scenarios-total">Total</th>
+    <th id="stats-header-scenarios-passed">Passed</th>
+    <th id="stats-header-scenarios-failed">Failed</th>
+    <th id="stats-header-steps-total">Total</th>
+    <th id="stats-header-steps-passed"    class="passed">Passed</th>
+    <th id="stats-header-steps-failed"    class="failed">Failed</th>
+    <th id="stats-header-steps-skipped"   class="skipped">Skipped</th>
+    <th id="stats-header-steps-pending"   class="pending">Pending</th>
+    <th id="stats-header-steps-undefined" class="undefined">Undefined</th>
+    <th id="stats-header-steps-missing"   class="missing">Missing</th>
+    <th id="stats-header-duration">Duration</th>
+    <th id="stats-header-status">Status</th>
+  </tr>
+</thead>
+
+        <tr>
+      <td class="tagname"><a id="stats-Verify different fixtures using Rest-Assured" href="classpath-features-01-Operation-feature.html">Verify different fixtures using Rest-Assured</a></td>
+            <td id="stats-number-scenarios-Verify different fixtures using Rest-Assured">3</td>
+      <td id="stats-number-scenarios-passed-Verify different fixtures using Rest-Assured">1</td>
+      <td id="stats-number-scenarios-failed-Verify different fixtures using Rest-Assured">2</td>
+      <td id="stats-number-steps-Verify different fixtures using Rest-Assured">6</td>
+      <td id="stats-number-steps-passed-Verify different fixtures using Rest-Assured">3</td>
+      <td id="stats-number-steps-failed-Verify different fixtures using Rest-Assured"      class="failed" >2</td>
+      <td id="stats-number-steps-skipped-Verify different fixtures using Rest-Assured"      class="skipped" >1</td>
+      <td id="stats-number-steps-pending-Verify different fixtures using Rest-Assured"   >0</td>
+      <td id="stats-number-steps-undefined-Verify different fixtures using Rest-Assured" >0</td>
+      <td id="stats-number-steps-missing-Verify different fixtures using Rest-Assured"   >0</td>
+      <td id="stats-duration-Verify different fixtures using Rest-Assured" class="duration-format">04s 814ms</td>
+      <td id="stats-status-Verify different fixtures using Rest-Assured" class="failed">Failed</td>
+    </tr>
+  </table>
+</div>
+
+
+<div class="container-fluid" id="report-details">
+  <div class="feature-tags"></div>
+  <div class="failed">
+    <div class="feature-line">
+      <span class="feature-keyword">Feature: </span>Verify different fixtures using Rest-Assured
+    </div>
+  </div>
+  <div class="feature-description"></div>
+
+      <div class="feature-tags"></div>
+    <div class="passed"><span class="step-keyword">Before </span><i>steps.OperationSteps.before(io.cucumber.java.Scenario)</i><span class="step-duration"></span></div>
+    <div class="failed"><span class="element-keyword">Scenario: </span><span class="element-name">1- Validate that 3 fixtures are returned within response</span></div>
+          <div class="passed"><span class="step-keyword">Given  </span><span class="step-name">I perform GET operation &quot;fixtures&quot;</span><span class="step-duration">01s 809ms</span></div>
+      
+            <div><div class="output_message"><input class="output_collapse" id="output_1175395547" type="checkbox"><label for="output_1175395547">Response Body is: [</label><div>    {<br/>        "fixtureId": "1",<br/>        "fixtureStatus": {<br/>            "displayed": false,<br/>            "suspended": true<br/>        },<br/>        "footballFullState": {<br/>            "homeTeam": "Dagenham & Redbridge",<br/>            "awayTeam": "Österreich",<br/>            "finished": false,<br/>            "gameTimeInSeconds": 2656,<br/>            "goals": [<br/>                {<br/>                    "clockTime": 640,<br/>                    "confirmed": true,<br/>                    "id": 678606,<br/>                    "ownGoal": false,<br/>                    "penalty": false,<br/>                    "period": "FIRST_HALF",<br/>                    "playerId": 560617,<br/>                    "teamId": "1"<br/>                },<br/>                {<br/>                    "clockTime": 864,<br/>                    "confirmed": true,<br/>                    "id": 164002,<br/>                    "ownGoal": false,<br/>                    "penalty": false,<br/>                    "period": "FIRST_HALF",<br/>                    "playerId": 60817,<br/>                    "teamId": "2"<br/>                },<br/>                {<br/>                    "clockTime": 1312,<br/>                    "confirmed": true,<br/>                    "id": 267245,<br/>                    "ownGoal": false,<br/>                    "penalty": false,<br/>                    "period": "FIRST_HALF",<br/>                    "playerId": 136629,<br/>                    "teamId": "1"<br/>                },<br/>                {<br/>                    "clockTime": 1760,<br/>                    "confirmed": true,<br/>                    "id": 758030,<br/>                    "ownGoal": false,<br/>                    "penalty": false,<br/>                    "period": "FIRST_HALF",<br/>                    "playerId": 131840,<br/>                    "teamId": "2"<br/>                }<br/>            ],<br/>            "period": "SECOND_HALF",<br/>            "possibles": [<br/>                <br/>            ],<br/>            "corners": [<br/>                <br/>            ],<br/>            "redCards": [<br/>                <br/>            ],<br/>            "yellowCards": [<br/>                <br/>            ],<br/>            "startDateTime": "2018-03-20T10:49:38.655Z",<br/>            "started": true,<br/>            "teams": [<br/>                {<br/>                    "association": "HOME",<br/>                    "name": "Dagenham-&-Redbridge",<br/>                    "teamId": "HOME"<br/>                },<br/>                {<br/>                    "association": "AWAY",<br/>                    "name": "Österreich",<br/>                    "teamId": "AWAY"<br/>                }<br/>            ]<br/>        }<br/>    },<br/>    {<br/>        "fixtureId": "2",<br/>        "fixtureStatus": {<br/>            "displayed": true,<br/>            "suspended": false<br/>        },<br/>        "footballFullState": {<br/>            "homeTeam": "Manchester United",<br/>            "awayTeam": "Leeds United",<br/>            "finished": false,<br/>            "gameTimeInSeconds": 900,<br/>            "goals": [<br/>                {<br/>                    "clockTime": 640,<br/>                    "confirmed": true,<br/>                    "id": 678606,<br/>                    "ownGoal": false,<br/>                    "penalty": false,<br/>                    "period": "FIRST_HALF",<br/>                    "playerId": 560617,<br/>                    "teamId": "1"<br/>                },<br/>                {<br/>                    "clockTime": 864,<br/>                    "confirmed": true,<br/>                    "id": 164002,<br/>                    "ownGoal": false,<br/>                    "penalty": false,<br/>                    "period": "FIRST_HALF",<br/>                    "playerId": 60817,<br/>                    "teamId": "2"<br/>                }<br/>            ],<br/>            "period": "FIRST_HALF",<br/>            "possibles": [<br/>                <br/>            ],<br/>            "corners": [<br/>                <br/>            ],<br/>            "redCards": [<br/>                <br/>            ],<br/>            "yellowCards": [<br/>                <br/>            ],<br/>            "startDateTime": "2018-03-20T10:49:38.655Z",<br/>            "started": true,<br/>            "teams": [<br/>                {<br/>                    "association": "HOME",<br/>                    "name": "Manchester-United",<br/>                    "teamId": "HOME"<br/>                },<br/>                {<br/>                    "association": "AWAY",<br/>                    "name": "Leeds-United",<br/>                    "teamId": "AWAY"<br/>                }<br/>            ]<br/>        }<br/>    },<br/>    {<br/>        "fixtureId": "3",<br/>        "fixtureStatus": {<br/>            "displayed": false,<br/>            "suspended": true<br/>        },<br/>        "footballFullState": {<br/>            "homeTeam": "Garforth FC",<br/>            "awayTeam": "York FC",<br/>            "finished": false,<br/>            "gameTimeInSeconds": 950,<br/>            "goals": [<br/>                {<br/>                    "clockTime": 640,<br/>                    "confirmed": true,<br/>                    "id": 678606,<br/>                    "ownGoal": false,<br/>                    "penalty": false,<br/>                    "period": "FIRST_HALF",<br/>                    "playerId": 560617,<br/>                    "teamId": "1"<br/>                }<br/>            ],<br/>            "period": "FIRST_HALF",<br/>            "possibles": [<br/>                <br/>            ],<br/>            "corners": [<br/>                <br/>            ],<br/>            "redCards": [<br/>                <br/>            ],<br/>            "yellowCards": [<br/>                <br/>            ],<br/>            "startDateTime": "2018-03-20T10:49:38.655Z",<br/>            "started": true,<br/>            "teams": [<br/>                {<br/>                    "association": "HOME",<br/>                    "name": "Garforth-FC",<br/>                    "teamId": "HOME"<br/>                },<br/>                {<br/>                    "association": "AWAY",<br/>                    "name": "York-FC",<br/>                    "teamId": "AWAY"<br/>                }<br/>            ]<br/>        }<br/>    },<br/>    {<br/>        "fixtureId": 4,<br/>        "fixtureStatus": {<br/>            "displayed": false,<br/>            "suspended": true<br/>        },<br/>        "footballFullState": {<br/>            "homeTeam": "TopMan-123",<br/>            "awayTeam": "EldoneSquare-234",<br/>            "finished": false,<br/>            "gameTimeInSeconds": 1256,<br/>            "goals": [<br/>                {<br/>                    "clockTime": 640,<br/>                    "confirmed": true,<br/>                    "id": 999,<br/>                    "ownGoal": false,<br/>                    "penalty": false,<br/>                    "period": "FIRST_HALF",<br/>                    "playerId": 50000,<br/>                    "teamId": "1"<br/>                }<br/>            ],<br/>            "period": "SECOND_HALF",<br/>            "possibles": [<br/>                <br/>            ],<br/>            "corners": [<br/>                <br/>            ],<br/>            "redCards": [<br/>                <br/>            ],<br/>            "yellowCards": [<br/>                <br/>            ],<br/>            "startDateTime": "2018-03-20T10:49:38.655Z",<br/>            "started": true,<br/>            "teams": [<br/>                {<br/>                    "association": "HOME",<br/>                    "name": "TopMan-123",<br/>                    "teamId": "HOME"<br/>                },<br/>                {<br/>                    "association": "AWAY",<br/>                    "name": "EldoneSquare-456",<br/>                    "teamId": "AWAY"<br/>                }<br/>            ]<br/>        }<br/>    },<br/>    {<br/>        "fixtureId": 4,<br/>        "fixtureStatus": {<br/>            "displayed": false,<br/>            "suspended": true<br/>        },<br/>        "footballFullState": {<br/>            "homeTeam": "TopMan-123",<br/>            "awayTeam": "EldoneSquare-234",<br/>            "finished": false,<br/>            "gameTimeInSeconds": 1256,<br/>            "goals": [<br/>                {<br/>                    "clockTime": 640,<br/>                    "confirmed": true,<br/>                    "id": 999,<br/>                    "ownGoal": false,<br/>                    "penalty": false,<br/>                    "period": "FIRST_HALF",<br/>                    "playerId": 50000,<br/>                    "teamId": "1"<br/>                }<br/>            ],<br/>            "period": "SECOND_HALF",<br/>            "possibles": [<br/>                <br/>            ],<br/>            "corners": [<br/>                <br/>            ],<br/>            "redCards": [<br/>                <br/>            ],<br/>            "yellowCards": [<br/>                <br/>            ],<br/>            "startDateTime": "2018-03-20T10:49:38.655Z",<br/>            "started": true,<br/>            "teams": [<br/>                {<br/>                    "association": "HOME",<br/>                    "name": "TopMan-123",<br/>                    "teamId": "HOME"<br/>                },<br/>                {<br/>                    "association": "AWAY",<br/>                    "name": "EldoneSquare-456",<br/>                    "teamId": "AWAY"<br/>                }<br/>            ]<br/>        }<br/>    }<br/>]</div></div></div>
+      <div></div>
+          <div class="failed"><span class="step-keyword">And  </span><span class="step-name">I should see the &quot;fixtureId&quot; and fixtureId_count &quot;5&quot; with the return object</span><span class="step-duration">596ms</span><div class="output_message"><input class="output_collapse" id="output_18133507" type="checkbox"><label for="output_18133507">java.lang.ClassCastException: class java.lang.Integer cannot be cast to class java.lang.String (java.lang.Integer and java.lang.String are in module java.base of loader 'bootstrap')</label><div>	at steps.OperationSteps.iShouldSeeTheAndFixtureId_countWithTheReturnObject(OperationSteps.java:59)<br/>	at ✽.I should see the "fixtureId" and fixtureId_count "5" with the return object(classpath:features/01.Operation.feature:5)<br/></div></div></div>
+      
+            <div><div class="output_message"><input class="output_collapse" id="output_844008362" type="checkbox"><label for="output_844008362">Response Body list Key :fixtureId</label><div>Response Body list Value :1<br/>Response Body list Key :fixtureId<br/>Response Body list Value :2<br/>Response Body list Key :fixtureId<br/>Response Body list Value :3</div></div></div>
+      <div></div>
+          <div class="skipped"><span class="step-keyword">And  </span><span class="step-name">I validate fixture Id is not null</span><span class="step-duration">000ms</span></div>
+      
+            <div></div>
+      <div></div>
+        
+    <br>
+      <div class="feature-tags"></div>
+    <div class="passed"><span class="step-keyword">Before </span><i>steps.OperationSteps.before(io.cucumber.java.Scenario)</i><span class="step-duration"></span></div>
+    <div class="passed"><span class="element-keyword">Scenario: </span><span class="element-name">2- Validate that new fixture is created with POST response</span></div>
+          <div class="passed"><span class="step-keyword">Given  </span><span class="step-name">I perform POST operation with test data file &quot;src/test/resources/TestData/data.json&quot;</span><span class="step-duration">02s 222ms</span></div>
+      
+            <div></div>
+      <div></div>
+          <div class="passed"><span class="step-keyword">And  </span><span class="step-name">I should see newly fixture ID &quot;4&quot; within the return object</span><span class="step-duration">070ms</span></div>
+      
+            <div><div class="output_message"><input class="output_collapse" id="output_308743765" type="checkbox"><label for="output_308743765">Response Body is: [</label><div>    {<br/>        "fixtureId": "1",<br/>        "fixtureStatus": {<br/>            "displayed": false,<br/>            "suspended": true<br/>        },<br/>        "footballFullState": {<br/>            "homeTeam": "Dagenham & Redbridge",<br/>            "awayTeam": "Österreich",<br/>            "finished": false,<br/>            "gameTimeInSeconds": 2656,<br/>            "goals": [<br/>                {<br/>                    "clockTime": 640,<br/>                    "confirmed": true,<br/>                    "id": 678606,<br/>                    "ownGoal": false,<br/>                    "penalty": false,<br/>                    "period": "FIRST_HALF",<br/>                    "playerId": 560617,<br/>                    "teamId": "1"<br/>                },<br/>                {<br/>                    "clockTime": 864,<br/>                    "confirmed": true,<br/>                    "id": 164002,<br/>                    "ownGoal": false,<br/>                    "penalty": false,<br/>                    "period": "FIRST_HALF",<br/>                    "playerId": 60817,<br/>                    "teamId": "2"<br/>                },<br/>                {<br/>                    "clockTime": 1312,<br/>                    "confirmed": true,<br/>                    "id": 267245,<br/>                    "ownGoal": false,<br/>                    "penalty": false,<br/>                    "period": "FIRST_HALF",<br/>                    "playerId": 136629,<br/>                    "teamId": "1"<br/>                },<br/>                {<br/>                    "clockTime": 1760,<br/>                    "confirmed": true,<br/>                    "id": 758030,<br/>                    "ownGoal": false,<br/>                    "penalty": false,<br/>                    "period": "FIRST_HALF",<br/>                    "playerId": 131840,<br/>                    "teamId": "2"<br/>                }<br/>            ],<br/>            "period": "SECOND_HALF",<br/>            "possibles": [<br/>                <br/>            ],<br/>            "corners": [<br/>                <br/>            ],<br/>            "redCards": [<br/>                <br/>            ],<br/>            "yellowCards": [<br/>                <br/>            ],<br/>            "startDateTime": "2018-03-20T10:49:38.655Z",<br/>            "started": true,<br/>            "teams": [<br/>                {<br/>                    "association": "HOME",<br/>                    "name": "Dagenham-&-Redbridge",<br/>                    "teamId": "HOME"<br/>                },<br/>                {<br/>                    "association": "AWAY",<br/>                    "name": "Österreich",<br/>                    "teamId": "AWAY"<br/>                }<br/>            ]<br/>        }<br/>    },<br/>    {<br/>        "fixtureId": "2",<br/>        "fixtureStatus": {<br/>            "displayed": true,<br/>            "suspended": false<br/>        },<br/>        "footballFullState": {<br/>            "homeTeam": "Manchester United",<br/>            "awayTeam": "Leeds United",<br/>            "finished": false,<br/>            "gameTimeInSeconds": 900,<br/>            "goals": [<br/>                {<br/>                    "clockTime": 640,<br/>                    "confirmed": true,<br/>                    "id": 678606,<br/>                    "ownGoal": false,<br/>                    "penalty": false,<br/>                    "period": "FIRST_HALF",<br/>                    "playerId": 560617,<br/>                    "teamId": "1"<br/>                },<br/>                {<br/>                    "clockTime": 864,<br/>                    "confirmed": true,<br/>                    "id": 164002,<br/>                    "ownGoal": false,<br/>                    "penalty": false,<br/>                    "period": "FIRST_HALF",<br/>                    "playerId": 60817,<br/>                    "teamId": "2"<br/>                }<br/>            ],<br/>            "period": "FIRST_HALF",<br/>            "possibles": [<br/>                <br/>            ],<br/>            "corners": [<br/>                <br/>            ],<br/>            "redCards": [<br/>                <br/>            ],<br/>            "yellowCards": [<br/>                <br/>            ],<br/>            "startDateTime": "2018-03-20T10:49:38.655Z",<br/>            "started": true,<br/>            "teams": [<br/>                {<br/>                    "association": "HOME",<br/>                    "name": "Manchester-United",<br/>                    "teamId": "HOME"<br/>                },<br/>                {<br/>                    "association": "AWAY",<br/>                    "name": "Leeds-United",<br/>                    "teamId": "AWAY"<br/>                }<br/>            ]<br/>        }<br/>    },<br/>    {<br/>        "fixtureId": "3",<br/>        "fixtureStatus": {<br/>            "displayed": false,<br/>            "suspended": true<br/>        },<br/>        "footballFullState": {<br/>            "homeTeam": "Garforth FC",<br/>            "awayTeam": "York FC",<br/>            "finished": false,<br/>            "gameTimeInSeconds": 950,<br/>            "goals": [<br/>                {<br/>                    "clockTime": 640,<br/>                    "confirmed": true,<br/>                    "id": 678606,<br/>                    "ownGoal": false,<br/>                    "penalty": false,<br/>                    "period": "FIRST_HALF",<br/>                    "playerId": 560617,<br/>                    "teamId": "1"<br/>                }<br/>            ],<br/>            "period": "FIRST_HALF",<br/>            "possibles": [<br/>                <br/>            ],<br/>            "corners": [<br/>                <br/>            ],<br/>            "redCards": [<br/>                <br/>            ],<br/>            "yellowCards": [<br/>                <br/>            ],<br/>            "startDateTime": "2018-03-20T10:49:38.655Z",<br/>            "started": true,<br/>            "teams": [<br/>                {<br/>                    "association": "HOME",<br/>                    "name": "Garforth-FC",<br/>                    "teamId": "HOME"<br/>                },<br/>                {<br/>                    "association": "AWAY",<br/>                    "name": "York-FC",<br/>                    "teamId": "AWAY"<br/>                }<br/>            ]<br/>        }<br/>    },<br/>    {<br/>        "fixtureId": 4,<br/>        "fixtureStatus": {<br/>            "displayed": false,<br/>            "suspended": true<br/>        },<br/>        "footballFullState": {<br/>            "homeTeam": "TopMan-123",<br/>            "awayTeam": "EldoneSquare-234",<br/>            "finished": false,<br/>            "gameTimeInSeconds": 1256,<br/>            "goals": [<br/>                {<br/>                    "clockTime": 640,<br/>                    "confirmed": true,<br/>                    "id": 999,<br/>                    "ownGoal": false,<br/>                    "penalty": false,<br/>                    "period": "FIRST_HALF",<br/>                    "playerId": 50000,<br/>                    "teamId": "1"<br/>                }<br/>            ],<br/>            "period": "SECOND_HALF",<br/>            "possibles": [<br/>                <br/>            ],<br/>            "corners": [<br/>                <br/>            ],<br/>            "redCards": [<br/>                <br/>            ],<br/>            "yellowCards": [<br/>                <br/>            ],<br/>            "startDateTime": "2018-03-20T10:49:38.655Z",<br/>            "started": true,<br/>            "teams": [<br/>                {<br/>                    "association": "HOME",<br/>                    "name": "TopMan-123",<br/>                    "teamId": "HOME"<br/>                },<br/>                {<br/>                    "association": "AWAY",<br/>                    "name": "EldoneSquare-456",<br/>                    "teamId": "AWAY"<br/>                }<br/>            ]<br/>        }<br/>    },<br/>    {<br/>        "fixtureId": 4,<br/>        "fixtureStatus": {<br/>            "displayed": false,<br/>            "suspended": true<br/>        },<br/>        "footballFullState": {<br/>            "homeTeam": "TopMan-123",<br/>            "awayTeam": "EldoneSquare-234",<br/>            "finished": false,<br/>            "gameTimeInSeconds": 1256,<br/>            "goals": [<br/>                {<br/>                    "clockTime": 640,<br/>                    "confirmed": true,<br/>                    "id": 999,<br/>                    "ownGoal": false,<br/>                    "penalty": false,<br/>                    "period": "FIRST_HALF",<br/>                    "playerId": 50000,<br/>                    "teamId": "1"<br/>                }<br/>            ],<br/>            "period": "SECOND_HALF",<br/>            "possibles": [<br/>                <br/>            ],<br/>            "corners": [<br/>                <br/>            ],<br/>            "redCards": [<br/>                <br/>            ],<br/>            "yellowCards": [<br/>                <br/>            ],<br/>            "startDateTime": "2018-03-20T10:49:38.655Z",<br/>            "started": true,<br/>            "teams": [<br/>                {<br/>                    "association": "HOME",<br/>                    "name": "TopMan-123",<br/>                    "teamId": "HOME"<br/>                },<br/>                {<br/>                    "association": "AWAY",<br/>                    "name": "EldoneSquare-456",<br/>                    "teamId": "AWAY"<br/>                }<br/>            ]<br/>        }<br/>    },<br/>    {<br/>        "fixtureId": 4,<br/>        "fixtureStatus": {<br/>            "displayed": false,<br/>            "suspended": true<br/>        },<br/>        "footballFullState": {<br/>            "homeTeam": "TopMan-123",<br/>            "awayTeam": "EldoneSquare-234",<br/>            "finished": false,<br/>            "gameTimeInSeconds": 1256,<br/>            "goals": [<br/>                {<br/>                    "clockTime": 640,<br/>                    "confirmed": true,<br/>                    "id": 999,<br/>                    "ownGoal": false,<br/>                    "penalty": false,<br/>                    "period": "FIRST_HALF",<br/>                    "playerId": 50000,<br/>                    "teamId": "1"<br/>                }<br/>            ],<br/>            "period": "SECOND_HALF",<br/>            "possibles": [<br/>                <br/>            ],<br/>            "corners": [<br/>                <br/>            ],<br/>            "redCards": [<br/>                <br/>            ],<br/>            "yellowCards": [<br/>                <br/>            ],<br/>            "startDateTime": "2018-03-20T10:49:38.655Z",<br/>            "started": true,<br/>            "teams": [<br/>                {<br/>                    "association": "HOME",<br/>                    "name": "TopMan-123",<br/>                    "teamId": "HOME"<br/>                },<br/>                {<br/>                    "association": "AWAY",<br/>                    "name": "EldoneSquare-456",<br/>                    "teamId": "AWAY"<br/>                }<br/>            ]<br/>        }<br/>    }<br/>]</div></div></div>
+      <div></div>
+        
+    <br>
+      <div class="feature-tags"></div>
+    <div class="passed"><span class="step-keyword">Before </span><i>steps.OperationSteps.before(io.cucumber.java.Scenario)</i><span class="step-duration"></span></div>
+    <div class="failed"><span class="element-keyword">Scenario: </span><span class="element-name">3- Validate that new fixture is created with GET response</span></div>
+          <div class="failed"><span class="step-keyword">Given  </span><span class="step-name">I should see teams array object has a teamId of 'HOME'</span><span class="step-duration">116ms</span><div class="output_message"><input class="output_collapse" id="output_148377842" type="checkbox"><label for="output_148377842">java.lang.NullPointerException</label><div>	at steps.OperationSteps.iShouldSeeTeamsArrayObjectHasATeamIdOfHOME(OperationSteps.java:101)<br/>	at ✽.I should see teams array object has a teamId of 'HOME'(classpath:features/01.Operation.feature:13)<br/></div></div></div>
+      
+            <div><div class="output_message">null</div></div>
+      <div></div>
+        
+    <br>
+  </div>
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+      <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+      <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Cucumber-JVM Reports</a>
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>

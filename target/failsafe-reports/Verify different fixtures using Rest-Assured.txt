@@ -1,0 +1,10 @@
+-------------------------------------------------------------------------------
+Test set: Verify different fixtures using Rest-Assured
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 6.116 s <<< FAILURE! - in Verify different fixtures using Rest-Assured
+Verify different fixtures using Rest-Assured.1- Validate that 3 fixtures are returned within response  Time elapsed: 3.592 s  <<< ERROR!
+java.lang.ClassCastException: class java.lang.Integer cannot be cast to class java.lang.String (java.lang.Integer and java.lang.String are in module java.base of loader 'bootstrap')
+
+Verify different fixtures using Rest-Assured.3- Validate that new fixture is created with GET response  Time elapsed: 0.025 s  <<< ERROR!
+java.lang.NullPointerException
+
