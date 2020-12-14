@@ -6,22 +6,25 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.restassured.RestAssured;
+import io.restassured.http.ContentType;
 import io.restassured.http.Header;
 import io.restassured.http.Headers;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import io.restassured.response.ResponseBody;
-import io.restassured.response.ResponseOptions;
 import io.restassured.specification.RequestSpecification;
 import org.junit.Assert;
 import java.io.File;
 import java.net.URISyntaxException;
+import java.util.ArrayList;
 import java.util.List;
+import static io.restassured.RestAssured.baseURI;
+import static io.restassured.RestAssured.given;
 
 
 public class OperationSteps {
 
-    private static ResponseOptions<Response> response;
+    private static byte[] response;
     public ResponseBody body;
     public JsonPath jsonPathEvaluator;
     public List<String> ResponseActualValueFromList;
@@ -50,39 +53,38 @@ public class OperationSteps {
         scenario.log("Response Body is: " + body.prettyPrint());
     }
 
-    @Then("I should see the {string} and fixtureId_count {string} with the return object")
-    public void iShouldSeeTheAndFixtureId_countWithTheReturnObject(String fixtureId, String fixtureExpectedCount) {
-        jsonPathEvaluator = body.jsonPath();
-        int actualcount=0;
-        ResponseActualValueFromList = jsonPathEvaluator.getList(fixtureId);//Key passed
-        // Iterate over the list and print individual ID
-        for (String listResponseActualValue : ResponseActualValueFromList) {
-            scenario.log("Response Body list Key :" + fixtureId);
-            scenario.log("Response Body list Value :" + listResponseActualValue);
-           actualcount++;
-        }
-        Assert.assertEquals("Incorrect value of fixtures is presented",
-                Integer.parseInt(fixtureExpectedCount),actualcount);
-      }
+    @And("I should see the fixtureId_count 3 with the return object and not null")
+    public void iShouldSeeTheFixtureId_countWithTheReturnObjectAndNotNull() {
+        baseURI = "http://localhost:3000/";
+        ArrayList<String> fixtureId = given().contentType(ContentType.JSON).log().all()
+                .get("/fixtures").then()
+                .extract().path("fixtureId");
 
-    @And("I validate fixture Id is not null")
-    public void iValidateFixtureIdIsNotNull() {
-        Assert.assertNotNull(String.valueOf(ResponseActualValueFromList), "fixtureId should not be null");
+        int actualcount=0;
+        for(String m: fixtureId)
+        {
+            System.out.println("FixtureId: "+ m);
+            actualcount++;
+        }
+        Assert.assertEquals(3,actualcount);
+        Assert.assertNotNull(fixtureId);
     }
 
     @Given("I perform POST operation with test data file {string}")
     public void iPerformPOSTOperationWithTestDataFile(String filepath) {
         RestAssured.baseURI = "http://localhost:3000/fixture";
-        httpRequest = RestAssured.given();
-        final Header header = new Header("Content-Type", "application/json");
-        headers = new Headers(header);
-        httpRequest.headers(headers);
-        actualResponse = httpRequest
-                .relaxedHTTPSValidation()
-                .when()
+        Response response  = (Response) given().log().all()
+                .contentType(ContentType.JSON).accept(ContentType.JSON)
+                .header("Content-Type","application/json")
                 .body(new File(filepath))
-                .post();
-        System.out.println(actualResponse.getBody().asPrettyString());
+                .when()
+                .post()
+                .then()
+                .statusCode(200)
+                .log().all();
+
+        String new_Fixture_Id = response.path("fixtureId");
+        System.out.println(new_Fixture_Id);
     }
 
     @And("I should see teams array object has a teamId of {string}")
