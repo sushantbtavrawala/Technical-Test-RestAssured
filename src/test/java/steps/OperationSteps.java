@@ -88,20 +88,17 @@ public class OperationSteps {
     }
 
     @And("I should see teams array object has a teamId of {string}")
-    public void iShouldSeeTeamsArrayObjectHasATeamIdOfHOME(String teamIdValue) {
-        RestAssured.baseURI = "http://localhost:3000/fixture/1";
-        httpRequest = RestAssured.given();
-        final Header header = new Header("Content-Type", "application/json");
-        headers = new Headers(header);
-        httpRequest.headers(headers);
-        actualResponse = httpRequest
-                .relaxedHTTPSValidation()
-                .when()
-                .get();
-        body = actualResponse.getBody();
-        jsonPathEvaluator = body.path("$.footballFullState.teams[0].teamId");
-        scenario.log(String.valueOf(jsonPathEvaluator));
-      Assert.assertTrue(ResponseActualValueFromList.contains(teamIdValue));
+    public void iShouldSeeTeamsArrayObjectHasATeamIdOfHOME(String team) {
+        baseURI = "http://localhost:3000";
+
+        Response response = (Response) given().contentType(ContentType.JSON).log().all()
+                .get("/fixture/1").getBody();
+
+        response.prettyPrint();
+        JsonPath extractor = response.jsonPath();
+        String teamID = extractor.get("$.footballFullState.teams[0].teamId");
+        System.out.println(teamID);
+        Assert.assertEquals(teamID,team);
     }
 
     @And("I should see newly fixture ID {string} within the return object")

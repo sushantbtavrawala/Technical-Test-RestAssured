@@ -1,0 +1,11 @@
+# Default ignored files
+/target/
+!.mvn/wrapper/maven-wrapper.jar
+.DS_Store
+.settings
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
